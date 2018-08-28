@@ -1,0 +1,22 @@
+{
+    "name": "magemonkeys/module-taskmanager",
+    "description": "Task Management System",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "arpan.abbacus@gmail.com",
+            "name": "Arpan Patel"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magemonkeys\\Taskmanager\\": ""
+        }
+    }
+}

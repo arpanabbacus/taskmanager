@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add action="magemonkeys_taskmanager/tasks/index" id="Magemonkeys_Taskmanager::magemonkeys_taskmanager_tasks" module="Magemonkeys_Taskmanager" parent="Magemonkeys::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Tasks"/>
+		<add id="Magemonkeys::top_level" module="Magemonkeys_Taskmanager" resource="Magento_Backend::content" sortOrder="9999" title="Magemonkeys"/>
+		<!-- <add action="magemonkeys_taskmanager/index/index" id="Magemonkeys_Taskmanager::index_index" module="Magemonkeys_Taskmanager" parent="Magemonkeys::top_level" resource="Magemonkeys_Taskmanager::index_index" sortOrder="9999" title="index index"/> -->
+	</menu>
+</config>

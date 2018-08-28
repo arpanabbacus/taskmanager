@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Magemonkeys_Taskmanager::Tasks" sortOrder="10" title="Tasks">
+					<resource id="Magemonkeys_Taskmanager::Tasks_save" sortOrder="10" title="Save Tasks"/>
+					<resource id="Magemonkeys_Taskmanager::Tasks_delete" sortOrder="20" title="Delete Tasks"/>
+					<resource id="Magemonkeys_Taskmanager::Tasks_update" sortOrder="30" title="Update Tasks"/>
+					<resource id="Magemonkeys_Taskmanager::Tasks_view" sortOrder="40" title="View Tasks"/>
+				</resource>
+				<resource id="Magemonkeys_Taskmanager::magemonkeys_taskmanager" sortOrder="10" title="magemonkeys taskmanager">
+					<resource id="Magemonkeys_Taskmanager::index_index" sortOrder="10" title="index index"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

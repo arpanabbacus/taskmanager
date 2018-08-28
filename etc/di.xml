@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Magemonkeys\Taskmanager\Api\TasksRepositoryInterface" type="Magemonkeys\Taskmanager\Model\TasksRepository"/>
+	<preference for="Magemonkeys\Taskmanager\Api\Data\TasksInterface" type="Magemonkeys\Taskmanager\Model\Tasks"/>
+	<preference for="Magemonkeys\Taskmanager\Api\Data\TasksSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Magemonkeys\Taskmanager\Model\ResourceModel\Tasks\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">magemonkeys_taskmanager_tasks</argument>
+			<argument name="resourceModel" xsi:type="string">Magemonkeys\Taskmanager\Model\ResourceModel\Tasks\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="magemonkeys_taskmanager_tasks_grid_data_source" xsi:type="string">Magemonkeys\Taskmanager\Model\ResourceModel\Tasks\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>
