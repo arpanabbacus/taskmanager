@@ -7,7 +7,7 @@ Task Management Module
 In this module, we will use `Magemonkeys` for Vendor name and `Taskmanager` for ModuleName. So we need to make this folder:
 `app/code/Magemonkeys/Taskmanager` and paste this code into that folder which you have created.
 
-### Step 2. Run Foloowing Command to install this extension
+### Step 2. Run Following Command to install this extension
 
 ~~~~~~~~~
 php bin/magento setup:upgrade
